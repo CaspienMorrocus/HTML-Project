@@ -1,21 +1,23 @@
 body {
     background-color: rgb(11, 46, 70);
+    background-image: url("Background.jpg");
+    background-size: cover; /* Ensure background image covers the full page */
+    background-position: center;
 }
 
 /* Style the heading */
 h1 {
-    color: black;
-    display: flex;
-    justify-content: flex-start; /* Align items to the left horizontally */
-    align-items: center; /* Center items vertically */
-    height: 100vh; /* Use full height of the viewport */
+    color: rgb(255, 255, 255);
     margin: 0; /* Remove default margin */
+    padding: 20px;
+    text-align: center; /* Center the text horizontally */
 }
 
+/* Styling for buttons container */
 ul.buttons {
-    background-color: #2b74e2;
+    background-color: #0b304b;
     overflow: hidden;
-    margin: 5;
+    margin: 5px;
     padding: 0;
     border-radius: 8px;
     display: flex;
@@ -38,11 +40,11 @@ li {
 button {
     color: white;
     text-align: center;
-    background-color: #2b74e2;
-    border: #2b74e2;
+    background-color: #0b304b;
+    border: #0b304b;
     width: 100px;
-    height: 25px;
-    font-size: 20px;
+    height: 35px;
+    font-size: 16px;
     border-radius: 8px;
 }
 
@@ -55,7 +57,6 @@ button a {
     display: flex; /* Center text */
     align-items: center;
     justify-content: center;
-    
 }
 
 button:hover {
@@ -64,4 +65,51 @@ button:hover {
 
 button:active {
     background-color: #000000;
+}
+
+/* Container styling */
+.container {
+    width: 700px; /* Set width of the container */
+    height: 700px; /* Set height of the container */
+    border-radius: 10px;
+    padding: 50px;
+    margin: 20px auto; /* Center the container horizontally */
+    background-color: rgba(11, 46, 70, 0.7);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.container img {
+    width: 200px; /* Fixed width */
+    height: 200px; 
+    border-radius: 50%; /* Make it circular */
+    justify-content: flex-start;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.container p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.button {
+    width: 400px; /* Set width of the container */
+    height: 20; /* Set height of the container */
+    border-radius: 10px;
+    padding: 50px;
+    margin: auto; /* Center the container horizontally */
+    background-color: rgba(11, 46, 70);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.button button {
+    
 }
