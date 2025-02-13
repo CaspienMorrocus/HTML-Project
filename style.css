@@ -100,16 +100,34 @@ button:active {
 
 .button {
     width: 400px; /* Set width of the container */
-    height: 20; /* Set height of the container */
+    height: 100px; /* Set a fixed height for the container */
     border-radius: 10px;
-    padding: 50px;
     margin: auto; /* Center the container horizontally */
-    background-color: rgba(11, 46, 70);
+    background-color: rgba(11, 46, 70, 0.7); /* Optional: Adjust the opacity */
     display: flex;
     flex-direction: column; 
     align-items: center;
+    justify-content: center; /* Vertically center the button */
+    padding: 0; /* Remove extra padding */
 }
 
 .button button {
-    
+    width: 100%; /* Set width to 100% of the container */
+    height: 100%; /* Set height to 100% of the container */
+    border-radius: 10px; /* Optional: Rounded corners for the button */
+    font-size: 16px; /* Optional: Adjust text size */
+    color: white; /* Optional: Text color */
+    background-color: rgba(11, 46, 70, 0.7); /* Optional: Set background color for button */
 }
+
+.button button:hover {
+    background-color: #1f5bb1;
+}
+
+.container img.pfp {
+    height: 250;
+    width: 300;
+    border: #0b304b;
+    border-radius: 30%;
+}
+
