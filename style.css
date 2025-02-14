@@ -92,7 +92,11 @@ button:active {
 }
 
 .container p {
+
     color: rgb(250, 250, 250);
+
+    color: white;
+
     text-align: center;
     font-size: 18px;
 }
