@@ -3,6 +3,7 @@ body {
     background-image: url("Background.jpg");
     background-size: cover; /* Ensure background image covers the full page */
     background-position: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Style the heading */
@@ -18,45 +19,46 @@ ul.buttons {
     background-color: #0b304b;
     overflow: hidden;
     margin: 5px;
-    padding: 0;
+    padding: 10px 20px;
     border-radius: 8px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between; /* Pushes h1 to the left and buttons to the right */
     align-items: center;
+    list-style: none;
 }
 
-ul li {
-    list-style-type: none;
-    padding: 10px;
+/* Styling for the heading inside ul */
+ul.buttons h1 {
+    margin: 0;
+    color: white;
+    font-size: 24px;
 }
 
-li {
-    display: block;
-    text-align: center;
-    padding: 20px 16px;
-    align-items: center;
+/* Ensure the list and buttons align properly */
+ul.buttons li {
+    display: flex;
+    gap: 10px; /* Adds spacing between buttons */
 }
 
 button {
     color: white;
-    text-align: center;
     background-color: #0b304b;
-    border: #0b304b;
+    border: none;
     width: 100px;
     height: 35px;
     font-size: 16px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 button a {
-    color: white; /* Make the text white */
-    text-decoration: none; /* Remove underline from links */
-    display: block; /* Make the link take up full button space */
-    height: 100%; /* Ensure the link covers the entire button */
-    width: 100%; /* Ensure the link covers the entire button */
-    display: flex; /* Center text */
+    color: white;
+    text-decoration: none;
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 button:hover {
@@ -78,6 +80,7 @@ button:active {
     display: flex;
     flex-direction: column; 
     align-items: center; 
+    position: relative;
 }
 
 .container img {
@@ -137,4 +140,121 @@ button:active {
 
 .container h5 {
     color: white;
+}
+
+.signin {
+    width: 500; /* Set width of the container */
+    height: 600; /* Set height of the container */
+    border-radius: 10px;
+    padding: 50px;
+    margin: 20px auto; /* Center the container horizontally */
+    background-color: rgba(11, 46, 70, 0.7);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding-top: auto;
+}
+
+.signin input {
+    display: block; /* Each input takes up full width */
+    margin: 10px auto; /* Auto centers horizontally */
+    background-color: rgba(11, 48, 75, 0.5);
+    border: 2;
+    border-color: #1f5bb1;
+    width: 300;
+    height: 40;
+    color: azure;
+    font-size: large;
+    padding-top: auto;
+}
+
+.signin form{
+    padding-top: 50;
+}
+
+.signin input[type="submit"] {
+    background-color: #0b304b;
+    border: 2;
+    border-color: #1f5bb1;
+    width: 250;
+    height: 40;
+    font-weight: bold;
+    color: azure;
+}
+
+ul.signinhead {
+    background-color: #0b304b;
+    overflow: hidden;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center; /* Pushes h1 to the left and buttons to the right */
+    align-items: center;
+    list-style: none;
+}
+
+ul.signinhead h1 {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+.social-icons img{
+    width: 40;
+}
+
+
+.goals {
+    background-color: #0b304b;
+    border-radius: 10px;
+    width: 250;
+    color: azure;
+    position: absolute;
+    left: 0;
+    margin-left: 30px;
+}
+
+.goals h2{
+    text-align: center;
+}
+
+.goals ul{
+    padding-bottom: 10;
+}
+
+.info {
+    background-color: #0b304b;
+    border-radius: 10px;
+    width: 250;
+    color: azure;
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+}
+
+.info h2{
+    text-align: center;
+}
+
+.info ul{
+    padding-bottom: 10;
+}
+
+.hobbies {
+    background-color: #0b304b;
+    border-radius: 10px;
+    width: 250;
+    color: azure;
+    position: absolute;
+    left: 35%;
+    bottom: 50;
+}
+
+.hobbies h2{
+    text-align: center;
+}
+
+.hobbies ul{
+    padding-bottom: 10;
 }
