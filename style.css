@@ -40,6 +40,59 @@ ul.buttons li {
     gap: 10px; /* Adds spacing between buttons */
 }
 
+
+/* Style for the language selector container */
+.language-selector {
+    display: inline-block; /* Make it inline with other elements */
+    margin-left: 20px; /* Space between the buttons and language selector */
+    background-color:none; /* Background color */
+    border: 2px;
+    border-radius: 8px; /* Rounded corners */
+    padding: 5px; /* Padding around the select element */
+}
+
+/* Style the label for the language selector */
+.language-selector label {
+    font-size: 14px; /* Adjust font size */
+    color: azure; /* Text color */
+    margin-right: 10px; /* Space between label and select box */
+}
+
+/* Style the select element itself */
+.language-selector select {
+    font-size: 16px; /* Font size */
+    padding: 8px 12px; /* Padding inside the select box */
+    border: none; /* Border color */
+    background-color:  #0b304b; /* Background color */
+    border-radius: 8px;
+    color: azure; /* Text color */
+    width: 150px; /* Width of the select box */
+    outline: none; /* Remove default outline */
+}
+
+/* Add hover effect to the select element */
+.language-selector select:hover {
+    border-color: #1f5bb1; /* Change border color on hover */
+}
+
+/* Add focus effect to the select element */
+.language-selector select:focus {
+    border-color: #1f5bb1; /* Change border color on focus */
+    background-color:  #0b304b; /* Change background color on focus */
+}
+
+/* Style for the options inside the select dropdown */
+.language-selector select option {
+    background-color:  #0660a0; /* Background color for options */
+    color: #ffffff; /* Text color for options */
+}
+
+/* Hover effect for the options */
+.language-selector select option:hover {
+    background-color:  #0b304b; /* Light gray background on hover */
+}
+
+
 button {
     color: white;
     background-color: #0b304b;

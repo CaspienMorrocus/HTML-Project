@@ -7,17 +7,18 @@
 </head>
 <body>
     <!-- Language Selector -->
-    <div class="language-selector">
-        <label for="languages">Select Language:</label>
-        <select id="languages" onchange="changeLanguage(this.value)">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="fr">Français</option>
-        </select>
-    </div>
+    
 
     <ul class="signinhead">
-        <h1 id="site-name">Kahanu</h1>
+        <h1 id="site-name" style="padding-left: 15%;">Kahanu</h1>
+        <div class="language-selector">
+            <label for="languages"></label>
+            <select id="languages" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+            </select>
+        </div>
     </ul>
 
     <div class="signin">
