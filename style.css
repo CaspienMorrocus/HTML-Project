@@ -95,11 +95,8 @@ button:active {
 }
 
 .container p {
-
     color: rgb(250, 250, 250);
-
     color: white;
-
     text-align: center;
     font-size: 18px;
 }
@@ -109,7 +106,6 @@ button:active {
     font-size: x-large;
     font-style: normal;
 }
-
 
 .button {
     width: 400px; /* Set width of the container */
@@ -138,8 +134,8 @@ button:active {
 }
 
 .container img.pfp {
-    height: 250;
-    width: 300;
+    height: 250px;
+    width: 300px;
     border: #0b304b;
     border-radius: 30%;
 }
@@ -149,8 +145,8 @@ button:active {
 }
 
 .signin {
-    width: 500; /* Set width of the container */
-    height: 600; /* Set height of the container */
+    width: 500px; /* Set width of the container */
+    height: 600px; /* Set height of the container */
     border-radius: 10px;
     padding: 50px;
     margin: 20px auto; /* Center the container horizontally */
@@ -167,23 +163,23 @@ button:active {
     background-color: rgba(11, 48, 75, 0.5);
     border: 2;
     border-color: #1f5bb1;
-    width: 300;
-    height: 40;
+    width: 300px;
+    height: 40px;
     color: azure;
     font-size: large;
     padding-top: auto;
 }
 
-.signin form{
-    padding-top: 50;
+.signin form {
+    padding-top: 50px;
 }
 
 .signin input[type="submit"] {
     background-color: #0b304b;
     border: 2;
     border-color: #1f5bb1;
-    width: 250;
-    height: 40;
+    width: 250px;
+    height: 40px;
     font-weight: bold;
     color: azure;
 }
@@ -206,61 +202,133 @@ ul.signinhead h1 {
     font-size: 24px;
 }
 
-.social-icons img{
-    width: 40;
+.social-icons img {
+    width: 40px;
 }
 
-
-.goals {
+.goals, .info, .hobbies {
     background-color: #0b304b;
     border-radius: 10px;
-    width: 250;
+    width: 250px;
     color: azure;
     position: absolute;
-    left: 0;
     margin-left: 30px;
 }
 
-.goals h2{
+.goals h2, .info h2, .hobbies h2 {
     text-align: center;
 }
 
-.goals ul{
-    padding-bottom: 10;
+.goals ul, .info ul, .hobbies ul {
+    padding-bottom: 10px;
 }
 
-.info {
-    background-color: #0b304b;
-    border-radius: 10px;
-    width: 250;
-    color: azure;
-    position: absolute;
-    right: 0;
-    margin-right: 30px;
+@media only screen and (max-width: 1024px) {
+    /* For tablets and smaller screens */
+    .container {
+        width: 80%; /* Adjust container width */
+        height: auto;
+        padding: 20px;
+    }
+
+    .signin {
+        width: 80%; /* Adjust signin width */
+        height: auto;
+        padding: 20px;
+    }
+
+    .button {
+        width: 80%; /* Adjust button container width */
+        height: auto;
+    }
+
+    .container img {
+        width: 150px; /* Adjust image size */
+        height: 150px;
+    }
+
+    .signin input, .signin input[type="submit"] {
+        width: 100%; /* Full-width inputs */
+    }
+
+    .goals, .info, .hobbies {
+        width: 100%;
+        position: relative;
+        margin: 10px 0;
+    }
+
+    .social-icons img {
+        width: 35px;
+    }
 }
 
-.info h2{
-    text-align: center;
+@media only screen and (max-width: 768px) {
+    /* For mobile screens */
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .signin {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .container img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .button {
+        width: 100%;
+        height: auto;
+    }
+
+    ul.buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .goals, .info, .hobbies {
+        width: 100%;
+        position: relative;
+        margin: 10px 0;
+    }
+
+    .social-icons img {
+        width: 30px;
+    }
 }
 
-.info ul{
-    padding-bottom: 10;
-}
+@media only screen and (max-width: 400px) {
+    /* For very small screens */
+    .container, .signin {
+        width: 95%;
+    }
 
-.hobbies {
-    background-color: #0b304b;
-    border-radius: 10px;
-    width: 250;
-    color: azure;
-    position: absolute;
-    left: 35%;
-    bottom: 50;
-}
+    .container img {
+        width: 100px;
+        height: 100px;
+    }
 
-.hobbies h2{
-    text-align: center;
-}
+    .signin input, .signin input[type="submit"] {
+        width: 100%;
+    }
 
-.hobbies ul{
-    padding-bottom: 10;
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
 }
