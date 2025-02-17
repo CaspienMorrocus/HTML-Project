@@ -267,6 +267,7 @@ ul.signinhead h1 {
     position: absolute;
     left: 0;
     margin-left: 30px;
+    padding: auto;
 }
 
 .goals h2{
@@ -345,6 +346,7 @@ ul.signinhead h1 {
         width: 100%;
         position: relative;
         margin: 10px 0;
+        clear: both;
     }
 
     .social-icons img {
@@ -352,8 +354,8 @@ ul.signinhead h1 {
     }
 }
 
+/* Mobile (768px and below) */
 @media only screen and (max-width: 768px) {
-    /* For mobile screens */
     body {
         font-size: 14px;
     }
@@ -362,6 +364,9 @@ ul.signinhead h1 {
         width: 90%;
         height: auto;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content */
     }
 
     .signin {
@@ -391,34 +396,75 @@ ul.signinhead h1 {
         margin-top: 10px;
     }
 
+    /* Updated Flexbox for goals, info, hobbies sections */
     .goals, .info, .hobbies {
         width: 100%;
-        position: relative;
         margin: 10px 0;
+        padding: 15px;
+        background-color: #0b304b;
+        border-radius: 10px;
+        color: azure;
+        box-sizing: border-box;
+        display: block; /* Ensure blocks are stacked */
+        margin-bottom: 20px; /* Adds margin between the sections */
     }
+
+    /* Adjust heading for sections */
+    .goals h2, .info h2, .hobbies h2 {
+        text-align: center;
+    }
+
+    /* Remove flex from individual sections */
+    .goals, .info, .hobbies {
+        display: block;
+        top: 20px;
+        left: 20px;
+        
+    }
+
 
     .social-icons img {
         width: 30px;
     }
 }
 
-@media only screen and (max-width: 400px) {
-    /* For very small screens */
-    .container, .signin {
-        width: 95%;
+/* Tablets (1024px and below) */
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .signin {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .button {
+        width: 80%;
+        height: auto;
     }
 
     .container img {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 
     .signin input, .signin input[type="submit"] {
         width: 100%;
     }
 
-    button {
+    .goals, .info, .hobbies {
         width: 100%;
-        font-size: 14px;
+        position: relative;
+        margin: 10px 0;
+        clear: both;
+    }
+
+    .social-icons img {
+        width: 35px;
     }
 }
+
