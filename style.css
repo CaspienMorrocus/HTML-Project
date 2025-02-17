@@ -393,10 +393,7 @@ ul.signinhead h1 {
         height: auto;
     }
 
-    .language-selector {
-        margin-right;
-    }
-
+    
     ul.buttons {
         flex-direction: column; /* Stack buttons vertically */
         justify-content: center;
