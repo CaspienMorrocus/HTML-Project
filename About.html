@@ -2,53 +2,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <meta name="keywords" content="portfolio, student, pakistani, broke">
+    <meta name="description" content="My portfolio for html project">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Kahanu">
+    <title id="title">About</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <ul class="buttons">
-            <h1>Kahanu</h1>
-            <li>
-    
-                <button><a href="index.html">Home</a></button>
-                <button><a href="signin.html">About</a></button>
-                <button ><a href="https://docs.google.com/forms/d/e/1FAIpQLSfOVo20KYCVq0Rd3m1GM35_v86ap0wwQ34mXGLusCkQ08C5cQ/viewform?usp=dialog" target="_blank">Contact us</a></button>
-    
-            </li>
-        </ul>
 
-        <div class="container">
-            <img src="pfp.jpg" alt="" class="pfp">
-            <h1>Kahanu</h1>
-            <div class="about">
-                <div class="goals">
-                    <h2>Goals</h2>
-                        <ul>
-                            <li>Entreprenuer</li>
-                            <li>Live in Dubai</li>
-                            <li>Rich</li>
-                        </ul>
-                    
-                </div>
-                <div class="info">
-                    <h2>Info</h2>
-                        <ul>
-                            <li>Pakistani</li>
-                            <li>17</li>
-                            <li>Broke</li>
-                        </ul>
-                    
-                </div>
-                <div class="hobbies">
-                    <h2>Hobbies</h2>
-                        <ul>
-                            <li>Sports</li>
-                            <li>Reading</li>
-                            <li>Working out</li>
-                        </ul>
-                    
-                </div>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <label for="languages">Select Language:</label>
+        <select id="languages" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+        </select>
+    </div>
+
+    <ul class="buttons">
+        <h1 id="site-name">Kahanu</h1>
+        <li>
+            <button><a href="index.html" id="home-btn">Home</a></button>
+            <button><a href="signin.html" id="about-btn">About</a></button>
+            <button ><a href="https://docs.google.com/forms/d/e/1FAIpQLSfOVo20KYCVq0Rd3m1GM35_v86ap0wwQ34mXGLusCkQ08C5cQ/viewform?usp=dialog" target="_blank" id="contact-btn">Contact us</a></button>
+        </li>
+    </ul>
+
+    <div class="container">
+        <img src="pfp.jpg" alt="" class="pfp">
+        <h1 id="name">Kahanu</h1>
+        <div class="about">
+            <div class="goals">
+                <h2 id="goals-title">Goals</h2>
+                <ul>
+                    <li id="goal1">Entrepreneur</li>
+                    <li id="goal2">Live in Dubai</li>
+                    <li id="goal3">Rich</li>
+                </ul>
+            </div>
+            <div class="info">
+                <h2 id="info-title">Info</h2>
+                <ul>
+                    <li id="info1">Pakistani</li>
+                    <li id="info2">17</li>
+                    <li id="info3">Broke</li>
+                </ul>
+            </div>
+            <div class="hobbies">
+                <h2 id="hobbies-title">Hobbies</h2>
+                <ul>
+                    <li id="hobby1">Sports</li>
+                    <li id="hobby2">Reading</li>
+                    <li id="hobby3">Working out</li>
+                </ul>
             </div>
         </div>
+    </div>
+
+    <script>
+        // Function to change language
+        function changeLanguage(language) {
+            if (language === "en") {
+                document.getElementById("title").innerText = "About";
+                document.getElementById("site-name").innerText = "Kahanu";
+                document.getElementById("home-btn").innerText = "Home";
+                document.getElementById("about-btn").innerText = "About";
+                document.getElementById("contact-btn").innerText = "Contact us";
+
+                document.getElementById("name").innerText = "Kahanu";
+                document.getElementById("goals-title").innerText = "Goals";
+                document.getElementById("goal1").innerText = "Entrepreneur";
+                document.getElementById("goal2").innerText = "Live in Dubai";
+                document.getElementById("goal3").innerText = "Rich";
+
+                document.getElementById("info-title").innerText = "Info";
+                document.getElementById("info1").innerText = "Pakistani";
+                document.getElementById("info2").innerText = "17";
+                document.getElementById("info3").innerText = "Broke";
+
+                document.getElementById("hobbies-title").innerText = "Hobbies";
+                document.getElementById("hobby1").innerText = "Sports";
+                document.getElementById("hobby2").innerText = "Reading";
+                document.getElementById("hobby3").innerText = "Working out";
+            } else if (language === "es") {
+                document.getElementById("title").innerText = "Acerca de";
+                document.getElementById("site-name").innerText = "Kahanu";
+                document.getElementById("home-btn").innerText = "Inicio";
+                document.getElementById("about-btn").innerText = "Acerca de";
+                document.getElementById("contact-btn").innerText = "Contáctenos";
+
+                document.getElementById("name").innerText = "Kahanu";
+                document.getElementById("goals-title").innerText = "Metas";
+                document.getElementById("goal1").innerText = "Emprendedor";
+                document.getElementById("goal2").innerText = "Vivir en Dubái";
+                document.getElementById("goal3").innerText = "Rico";
+
+                document.getElementById("info-title").innerText = "Información";
+                document.getElementById("info1").innerText = "Paquistaní";
+                document.getElementById("info2").innerText = "17";
+                document.getElementById("info3").innerText = "Pobre";
+
+                document.getElementById("hobbies-title").innerText = "Aficiones";
+                document.getElementById("hobby1").innerText = "Deportes";
+                document.getElementById("hobby2").innerText = "Lectura";
+                document.getElementById("hobby3").innerText = "Hacer ejercicio";
+            } else if (language === "fr") {
+                document.getElementById("title").innerText = "À propos";
+                document.getElementById("site-name").innerText = "Kahanu";
+                document.getElementById("home-btn").innerText = "Accueil";
+                document.getElementById("about-btn").innerText = "À propos";
+                document.getElementById("contact-btn").innerText = "Contactez-nous";
+
+                document.getElementById("name").innerText = "Kahanu";
+                document.getElementById("goals-title").innerText = "Objectifs";
+                document.getElementById("goal1").innerText = "Entrepreneur";
+                document.getElementById("goal2").innerText = "Vivre à Dubaï";
+                document.getElementById("goal3").innerText = "Riche";
+
+                document.getElementById("info-title").innerText = "Info";
+                document.getElementById("info1").innerText = "Pakistanais";
+                document.getElementById("info2").innerText = "17";
+                document.getElementById("info3").innerText = "Pauvre";
+
+                document.getElementById("hobbies-title").innerText = "Loisirs";
+                document.getElementById("hobby1").innerText = "Sports";
+                document.getElementById("hobby2").innerText = "Lecture";
+                document.getElementById("hobby3").innerText = "Exercice";
+            }
+        }
+    </script>
+
 </body>
 </html>

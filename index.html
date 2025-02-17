@@ -2,28 +2,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="portfolio, student, pakistani, broke">
+    <meta name="description" content="My portfolio for html project">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Kahanu">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="alternate" hreflang="en" href="index.html">
+    <link rel="alternate" hreflang="es" href="index-es.html">
 </head>
 <body>
     
+    <!-- Language Selector -->
+    
+
     <ul class="buttons">
-        <h1>Kahanu</h1>
+        <h1 id="name">Kahanu</h1>
         <li>
-            <button><a href="index.html">Home</a></button>
-            <button><a href="signin.html">About</a></button>
-            <button ><a href="https://docs.google.com/forms/d/e/1FAIpQLSfOVo20KYCVq0Rd3m1GM35_v86ap0wwQ34mXGLusCkQ08C5cQ/viewform?usp=dialog" target="_blank">Contact us</a></button>
+            <button><a href="index.html" id="home-btn">Home</a></button>
+            <button><a href="signin.html" id="about-btn">About</a></button>
+            <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSfOVo20KYCVq0Rd3m1GM35_v86ap0wwQ34mXGLusCkQ08C5cQ/viewform?usp=dialog" target="_blank" id="contact-btn">Contact us</a></button>
+            <div class="language-selector">
+                <label for="languages"></label>
+                <select id="languages" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
         </li>
     </ul>
+
     <div class="container">
         <img src="pfp.jpg" alt="">
-        <p>A 17 year old Pakistani</p>
-        <p>Student at Dignity</p>
-        <p class="p3">Goals and Ambitions beyond your Imagination</p>
+        <p id="description1">A 17 year old Pakistani</p>
+        <p id="description2">Student at Dignity</p>
+        <p class="p3" id="goals">Goals and Ambitions beyond your Imagination</p>
         <div class="button">
             <button><a href="signin.html">About me</a></button>
-            
         </div>
     </div>
+
+    <script>
+        // Function to change language
+        function changeLanguage(language) {
+            if (language === "en") {
+                document.getElementById("name").innerText = "Kahanu";
+                document.getElementById("description1").innerText = "A 17 year old Pakistani";
+                document.getElementById("description2").innerText = "Student at Dignity";
+                document.getElementById("goals").innerText = "Goals and Ambitions beyond your Imagination";
+                document.getElementById("home-btn").innerText = "Home";
+                document.getElementById("about-btn").innerText = "About";
+                document.getElementById("contact-btn").innerText = "Contact us";
+            } else if (language === "es") {
+                document.getElementById("name").innerText = "Kahanu";
+                document.getElementById("description1").innerText = "Un pakistaní de 17 años";
+                document.getElementById("description2").innerText = "Estudiante en Dignity";
+                document.getElementById("goals").innerText = "Metas y ambiciones más allá de tu imaginación";
+                document.getElementById("home-btn").innerText = "Inicio";
+                document.getElementById("about-btn").innerText = "Acerca de";
+                document.getElementById("contact-btn").innerText = "Contáctenos";
+            } else if (language === "fr") {
+                document.getElementById("name").innerText = "Kahanu";
+                document.getElementById("description1").innerText = "Un pakistanais de 17 ans";
+                document.getElementById("description2").innerText = "Étudiant à Dignity";
+                document.getElementById("goals").innerText = "Objectifs et ambitions au-delà de votre imagination";
+                document.getElementById("home-btn").innerText = "Accueil";
+                document.getElementById("about-btn").innerText = "À propos";
+                document.getElementById("contact-btn").innerText = "Contactez-nous";
+            }
+        }
+    </script>
+
 </body>
 </html>

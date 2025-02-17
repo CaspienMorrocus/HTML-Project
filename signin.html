@@ -2,26 +2,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in</title>
+    <title id="title">Sign in</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <label for="languages">Select Language:</label>
+        <select id="languages" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+        </select>
+    </div>
+
     <ul class="signinhead">
-        <h1>Kahanu</h1>
+        <h1 id="site-name">Kahanu</h1>
     </ul>
+
     <div class="signin">
-        <h1>Please sign in before proceeding <hr></h1>
+        <h1 id="signin-message">Please sign in before proceeding <hr></h1>
         <form action="About.html" method="get">
             <p><input type="email" name="email" required placeholder="Email"></p>
             <p><input type="password" name="password" required placeholder="Password"></p>
             <p><input type="number" name="age" required placeholder="Age"></p>
             <p><input type="submit" value="Submit"></p>
         </form>
+
         <div class="social-icons">
             <a href="https://www.youtube.com/watch?v=KEuej6L7aMU" target="_blank">
                 <img src="youtube.png" alt="Youtube">
             </a>
         </div>
     </div>
+
+    <script>
+        // Function to change language
+        function changeLanguage(language) {
+            if (language === "en") {
+                document.getElementById("title").innerText = "Sign in";
+                document.getElementById("signin-message").innerText = "Please sign in before proceeding";
+                document.getElementById("site-name").innerText = "Kahanu";
+            } else if (language === "es") {
+                document.getElementById("title").innerText = "Iniciar sesión";
+                document.getElementById("signin-message").innerText = "Por favor, inicie sesión antes de continuar";
+                document.getElementById("site-name").innerText = "Kahanu";
+            } else if (language === "fr") {
+                document.getElementById("title").innerText = "Se connecter";
+                document.getElementById("signin-message").innerText = "Veuillez vous connecter avant de continuer";
+                document.getElementById("site-name").innerText = "Kahanu";
+            }
+        }
+    </script>
 </body>
 </html>
