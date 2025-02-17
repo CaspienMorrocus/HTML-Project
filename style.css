@@ -360,6 +360,14 @@ ul.signinhead h1 {
         font-size: 14px;
     }
 
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;  /* Allow items to wrap */
+        justify-content: space-between;  /* Space out the items */
+      }
+      
+      
+
     .container {
         width: 90%;
         height: auto;
