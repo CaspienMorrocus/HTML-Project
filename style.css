@@ -55,18 +55,18 @@ ul.buttons li {
 .language-selector label {
     font-size: 14px; /* Adjust font size */
     color: azure; /* Text color */
-    margin-right: 10px; /* Space between label and select box */
+    
 }
 
 /* Style the select element itself */
 .language-selector select {
     font-size: 16px; /* Font size */
-    padding: 8px 12px; /* Padding inside the select box */
-    border: none; /* Border color */
+    padding: 3; /* Padding inside the select box */
     background-color:  #0b304b; /* Background color */
     border-radius: 8px;
+    border: none;
     color: azure; /* Text color */
-    width: 150px; /* Width of the select box */
+    width: 80px; /* Width of the select box */
     outline: none; /* Remove default outline */
 }
 
@@ -391,6 +391,10 @@ ul.signinhead h1 {
     .button {
         width: 100%;
         height: auto;
+    }
+
+    .language-selector {
+        margin-right;
     }
 
     ul.buttons {
