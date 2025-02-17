@@ -1,0 +1,266 @@
+body {
+    background-color: rgb(11, 46, 70);
+    background-image: url("Background.jpg");
+    background-size: cover; /* Ensure background image covers the full page */
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Style the heading */
+h1 {
+    color: rgb(255, 255, 255);
+    margin: 0; /* Remove default margin */
+    padding: 20px;
+    text-align: center; /* Center the text horizontally */
+}
+
+/* Styling for buttons container */
+ul.buttons {
+    background-color: #0b304b;
+    overflow: hidden;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between; /* Pushes h1 to the left and buttons to the right */
+    align-items: center;
+    list-style: none;
+}
+
+/* Styling for the heading inside ul */
+ul.buttons h1 {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+/* Ensure the list and buttons align properly */
+ul.buttons li {
+    display: flex;
+    gap: 10px; /* Adds spacing between buttons */
+}
+
+button {
+    color: white;
+    background-color: #0b304b;
+    border: none;
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+button:hover {
+    background-color: #1f5bb1; 
+}
+
+button:active {
+    background-color: #000000;
+}
+
+/* Container styling */
+.container {
+    width: 700px; /* Set width of the container */
+    height: 700px; /* Set height of the container */
+    border-radius: 10px;
+    padding: 50px;
+    margin: 20px auto; /* Center the container horizontally */
+    background-color: rgba(11, 46, 70, 0.7);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    position: relative;
+}
+
+.container img {
+    width: 200px; /* Fixed width */
+    height: 200px; 
+    border-radius: 50%; /* Make it circular */
+    justify-content: flex-start;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.container p {
+
+    color: rgb(250, 250, 250);
+
+    color: white;
+
+    text-align: center;
+    font-size: 18px;
+}
+
+.container p.p3 {
+    font-weight: bolder;
+    font-size: x-large;
+    font-style: normal;
+}
+
+
+.button {
+    width: 400px; /* Set width of the container */
+    height: 100px; /* Set a fixed height for the container */
+    border-radius: 10px;
+    margin: auto; /* Center the container horizontally */
+    background-color: rgba(11, 46, 70, 0.7); /* Optional: Adjust the opacity */
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; /* Vertically center the button */
+    padding: 0; /* Remove extra padding */
+}
+
+.button button {
+    width: 100%; /* Set width to 100% of the container */
+    height: 100%; /* Set height to 100% of the container */
+    border-radius: 10px; /* Optional: Rounded corners for the button */
+    font-size: 16px; /* Optional: Adjust text size */
+    color: white; /* Optional: Text color */
+    background-color: rgba(11, 46, 70, 0.7); /* Optional: Set background color for button */
+}
+
+.button button:hover {
+    background-color: #1f5bb1;
+}
+
+.container img.pfp {
+    height: 250;
+    width: 300;
+    border: #0b304b;
+    border-radius: 30%;
+}
+
+.container h5 {
+    color: white;
+}
+
+.signin {
+    width: 500; /* Set width of the container */
+    height: 600; /* Set height of the container */
+    border-radius: 10px;
+    padding: 50px;
+    margin: 20px auto; /* Center the container horizontally */
+    background-color: rgba(11, 46, 70, 0.7);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding-top: auto;
+}
+
+.signin input {
+    display: block; /* Each input takes up full width */
+    margin: 10px auto; /* Auto centers horizontally */
+    background-color: rgba(11, 48, 75, 0.5);
+    border: 2;
+    border-color: #1f5bb1;
+    width: 300;
+    height: 40;
+    color: azure;
+    font-size: large;
+    padding-top: auto;
+}
+
+.signin form{
+    padding-top: 50;
+}
+
+.signin input[type="submit"] {
+    background-color: #0b304b;
+    border: 2;
+    border-color: #1f5bb1;
+    width: 250;
+    height: 40;
+    font-weight: bold;
+    color: azure;
+}
+
+ul.signinhead {
+    background-color: #0b304b;
+    overflow: hidden;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center; /* Pushes h1 to the left and buttons to the right */
+    align-items: center;
+    list-style: none;
+}
+
+ul.signinhead h1 {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+.social-icons img{
+    width: 40;
+}
+
+
+.goals {
+    background-color: #0b304b;
+    border-radius: 10px;
+    width: 250;
+    color: azure;
+    position: absolute;
+    left: 0;
+    margin-left: 30px;
+}
+
+.goals h2{
+    text-align: center;
+}
+
+.goals ul{
+    padding-bottom: 10;
+}
+
+.info {
+    background-color: #0b304b;
+    border-radius: 10px;
+    width: 250;
+    color: azure;
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+}
+
+.info h2{
+    text-align: center;
+}
+
+.info ul{
+    padding-bottom: 10;
+}
+
+.hobbies {
+    background-color: #0b304b;
+    border-radius: 10px;
+    width: 250;
+    color: azure;
+    position: absolute;
+    left: 35%;
+    bottom: 50;
+}
+
+.hobbies h2{
+    text-align: center;
+}
+
+.hobbies ul{
+    padding-bottom: 10;
+}
