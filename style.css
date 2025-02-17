@@ -104,6 +104,12 @@ button:active {
     font-size: 18px;
 }
 
+.container p.p3 {
+    font-weight: bolder;
+    font-size: x-large;
+    font-style: normal;
+}
+
 
 .button {
     width: 400px; /* Set width of the container */
