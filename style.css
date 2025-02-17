@@ -392,6 +392,11 @@ ul.signinhead h1 {
         width: 100%;
         height: auto;
     }
+    .language-selector select {
+        width: 60px;
+        padding-left: 0%;
+        margin-left: -20px;
+    }
 
     
     ul.buttons {
